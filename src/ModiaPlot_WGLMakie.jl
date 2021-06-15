@@ -22,12 +22,12 @@ import MonteCarloMeasurements
 using  Unitful
 
 using  WGLMakie
-include("$(ModiaResult.path)/src_plot/plot.jl")
+include("$(ModiaResult.path)/src/plot.jl")
 
 const showFigureStringInDiagram = true
 const callDisplayFunction = true
 const reusePossible = false
-include("$(ModiaResult.path)/src_plot/makie.jl")
+include("$(ModiaResult.path)/src/makie.jl")
 
 
 function showFigure(figureNumber::Int)::Nothing
