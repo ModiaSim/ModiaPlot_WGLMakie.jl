@@ -7,13 +7,10 @@ module ModiaPlot_WGLMakie
 const headingSize = 10
 
 const path = dirname(dirname(@__FILE__))   # Absolute path of package directory
-const Version = "0.2.0"
-const Date = "2021-06-15"
+const Version = "0.3.0"
+const Date = "2021-06-19"
 
 println("Importing ModiaPlot_WGLMakie Version $Version ($Date) - this takes some time due to WGLMakie import")
-
-export plot, showFigure, saveFigure, closeFigure, closeAllFigures
-export resultInfo, showResultInfo
 
 import ModiaResult
 import Colors
