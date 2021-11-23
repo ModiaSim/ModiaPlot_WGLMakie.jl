@@ -7,8 +7,8 @@ module ModiaPlot_WGLMakie
 const headingSize = 10
 
 const path = dirname(dirname(@__FILE__))   # Absolute path of package directory
-const Version = "0.3.0"
-const Date = "2021-06-19"
+const Version = "0.4.3"
+const Date = "2021-11-23"
 
 println("Importing ModiaPlot_WGLMakie Version $Version ($Date) - this takes some time due to WGLMakie import")
 
@@ -24,6 +24,8 @@ include("$(ModiaResult.path)/src/plot.jl")
 const showFigureStringInDiagram = true
 const callDisplayFunction = true
 const reusePossible = false
+
+const Makie_Point2f = isdefined(WGLMakie, :Point2f) ? Point2f : Point2f0    
 include("$(ModiaResult.path)/src/makie.jl")
 
 
