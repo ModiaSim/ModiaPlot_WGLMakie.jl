@@ -7,8 +7,8 @@ module ModiaPlot_WGLMakie
 const headingSize = 10
 
 const path = dirname(dirname(@__FILE__))   # Absolute path of package directory
-const Version = "0.4.3"
-const Date = "2021-11-23"
+const Version = "0.5.0"
+const Date = "2022-02-03"
 
 println("Importing ModiaPlot_WGLMakie Version $Version ($Date) - this takes some time due to WGLMakie import")
 
